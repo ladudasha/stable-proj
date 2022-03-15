@@ -1,0 +1,16 @@
+@import "./abstracts/normalize.scss";
+@import "./abstracts/vars";
+@import './abstracts/mixins';
+
+.container {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media screen and (min-width: 1216px) {
+        padding: 0 10px;
+    }
+
+}
+
+@import "./components/sections/delivery";
