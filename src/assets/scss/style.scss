@@ -3,14 +3,17 @@
 @import './abstracts/mixins';
 
 .container {
-    max-width: 375px;
+    max-width: 1216px;
+    min-width: 320px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     @media screen and (min-width: 1216px) {
-        padding: 0 10px;
+        padding: 0;
     }
 
 }
 
 @import "./components/sections/delivery";
+@import "./components/order";
+@import "./components/sections/payment";

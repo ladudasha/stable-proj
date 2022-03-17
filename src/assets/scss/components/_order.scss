@@ -1,0 +1,27 @@
+.order {
+    @include flex (center, center, wrap, column);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    gap: 16px;
+    &-block {
+        @include flex (center, center, wrap, column);
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        position: relative;
+        
+    }
+    &-beige {
+        text-align: center;
+        color: #c7a17a;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+}

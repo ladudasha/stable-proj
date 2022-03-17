@@ -1,0 +1,74 @@
+.delivery {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    &__wrapper {
+        @include flex(center, center, wrap, column);
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        gap: 32px;
+    }
+    &__title {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__payment-item {
+        margin-bottom: 8px;
+        position: relative;
+        &:last-child {
+            margin-bottom: 24px;
+        }
+        &::before {
+            @include pseudo();
+            width: 8px;
+            height: 8px;
+            background: #c7a17a;
+            border-radius: 50%;
+            top: 5px;
+            left: -20px;
+        }
+    }
+    &__payment-btn {
+        width: 335px;
+        height: 48px;
+        padding: 14px 20px;
+        background: #c7a17a;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+        display: block;
+        margin: 0 auto;
+    }
+    &__shipping {
+        @include flex(center, center, wrap, column);
+        gap: 16px;
+    }
+    &__text {
+        position: relative;
+    }
+    &__text:first-child::before {
+        @include pseudo();
+        width: 24px;
+        height: 24px;
+        left: -40px;
+        top: -5px;
+        background: #c7a17a;
+    }
+    &__text:nth-child(2)::before {
+        @include pseudo();
+        width: 24px;
+        height: 24px;
+        left: -40px;
+        top: -5px;
+        background: #21AF09;
+    }
+    &__text:last-child::before {
+        @include pseudo();
+        width: 24px;
+        height: 24px;
+        left: -40px;
+        top: -5px;
+        background: #FF00FF;
+    }
+}

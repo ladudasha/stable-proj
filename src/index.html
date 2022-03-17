@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>gulp project</title>
+    <title>stable-proj</title>
 </head>
+
 <body>
+    <!-- DELIVERY -->
+
     <section class="delivery">
+
         <div class="container">
-        <h2>Доставка и оплата</h2>
-        <div class="delivery__top">
-            <ul class="delivery__top-list">
-                <li class="delivery__top-item">Доставка осуществляется с 11 до 22:00</li>
-                <li class="delivery__top-item">Прием предзаказов на сайте — круглосуточно</li>
-                <li class="delivery__top-item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00</li>
-            </ul>
-            <button class="delivery__top-btn">Проверить адрес</button>
-        </div>
-        <div class="delivery__center">
-            <div class="delivery__center">
-                <p>400 ₽</p>
-                <p>Минимальный заказ</p>
-            </div>
-            <div>
-                <p>11—22:00</p>
-                <p>Время работы</p>
-            </div>
-            <div>
-                <p>60 мин</p>
-                <p>Время доставки</p>
-            </div>
-        </div>
-        <div class="delivery__bottom">
-            <div>
-                <div></div>
-                <p>Бесплатная доставка от 400 ₽</p>
-            </div>
-            <div>
-                <div></div>
-                <p>Бесплатная доставка от 800 ₽</p>
-            </div>
-            <div>
-                <div></div>
-                <p>Бесплатная доставка от 1200 ₽</p>
+            <div class="delivery__wrapper">
+
+                <div class="delivery__payment">
+                    <h2 class="delivery__title title">Доставка и оплата</h2>
+                    <ul class="delivery__payment-list">
+                        <li class="delivery__payment-item">Доставка осуществляется с 11 до 22:00</li>
+                        <li class="delivery__payment-item">Прием предзаказов на сайте — круглосуточно</li>
+                        <li class="delivery__payment-item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00
+                        </li>
+                    </ul>
+                    <button class="delivery__payment-btn btn">Проверить адрес</button>
+                </div>
+
+                <div class="delivery__order order">
+                    <div class="order-block">
+                        <p class="order-beige">400 ₽</p>
+                        <p>Минимальный заказ</p>
+                    </div>
+                    <div class="order-block">
+                        <p class="order-beige">11—22:00</p>
+                        <p>Время работы</p>
+                    </div>
+                    <div class="order-block">
+                        <p class="order-beige">60 мин</p>
+                        <p>Время доставки</p>
+                    </div>
+                </div>
+
+                <div class="delivery__shipping">
+                    <p class="delivery__text">Бесплатная доставка от 400 ₽</p>
+                    <p class="delivery__text">Бесплатная доставка от 800 ₽</p>
+                    <p class="delivery__text">Бесплатная доставка от 1200 ₽</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map">
+        <div style="position:relative;overflow:hidden;"><a
+                href="https://yandex.by/maps/46/kirov/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Киров</a><a
+                href="https://yandex.by/maps/46/kirov/house/ulitsa_lenina_82/YEAYcA9hTkIBQFtifXpxc3RrYw==/?indoorLevel=1&ll=49.681776%2C58.602888&utm_medium=mapframe&utm_source=maps&z=17.09"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ленина, 82 — Яндекс Карты</a><iframe
+                src="https://yandex.by/map-widget/v1/-/CCUBiQx9kD" width="100%" height="640" frameborder="1"
+                allowfullscreen="true" style="position:relative;"></iframe></div>
+    </section>
+
+    <!-- PAYMENT -->
+    <section class="payment">
+        <div class="container">
+            <h3 class="payment__title title">Условия оплаты</h3>
+            <p>Принимаем оплату на сайте с помощью банковских карт или платежных систем
+                Apple Pay и Google Pay, а также наличными
+                и картой при доставке заказа.</p>
+            <div class="payment__links-wrap">
+                <div class="payment__links-block">
+                    <a class="payment__link" href="">
+                        <img src="./assets/images/payment/mastercard.png" alt="">
+                    </a>
+                    <a class="payment__link" href="./assets/images/payment/visa.svg"><img
+                            src="./assets/images/payment/visa.png" alt="">
+                    </a>
+                    <a class="payment__link" href="./assets/images/payment/mir.svg"><img
+                            src="./assets/images/payment/mir.png" alt="">
+                    </a>
+                </div>
+                <div class="payment__links-block">
+                    <a class="payment__link" href="./assets/images/payment/sber-bank.svg"><img
+                            src="./assets/images/payment/cber.png" alt="">
+                    </a>
+                    <a class="payment__link" href="./assets/images/payment/apple-pay.svg"><img
+                            src="./assets/images/payment/applePay.png" alt="">
+                    </a>
+                    <a class="payment__link" href="./assets/images/payment/google-pay.svg"><img
+                            src="./assets/images/payment/googlePay.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <img class="payment__img" src="./assets/images/payment/ImgPayment.png" alt="man and motorcycle">
 
 
-    </div>
+        </div>
+
     </section>
 
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,24 @@
+.payment {
+    padding-bottom: 32px;
+    &__title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__img {
+        width: 100%;
+        min-width: 335px;
+        max-width: 1216px;
+        margin: 0 auto;
+    }
+    &__links-wrap {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        @include flex (center, center, wrap, column);
+        gap: 16px;
+
+    }
+    &__link {
+        width: 110px;
+    }
+    
+}
