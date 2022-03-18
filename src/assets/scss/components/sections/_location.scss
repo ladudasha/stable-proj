@@ -1,5 +1,5 @@
 .location {
-    // display: none;
+    display: none;
     &__wrap {
         @include flex(center, center, wrap, column);
         gap: 16px;

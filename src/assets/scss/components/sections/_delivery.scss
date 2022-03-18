@@ -12,13 +12,29 @@
     &__title {
         margin-bottom: 16px;
         text-align: center;
+        @media screen and (min-width: 1216px) {
+            font-family: "NewBaskervilleC";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 72px;
+            text-align: center;
+            color: #010103;
+        }
+    }
+    &__payment {
+        @media screen and (min-width: 1216px) {
+            display: none;
+        }
+    }
+    &__payment-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 24px;
     }
     &__payment-item {
-        margin-bottom: 8px;
         position: relative;
-        &:last-child {
-            margin-bottom: 24px;
-        }
         &::before {
             @include pseudo();
             width: 8px;
@@ -46,29 +62,19 @@
     }
     &__text {
         position: relative;
-    }
-    &__text:first-child::before {
-        @include pseudo();
-        width: 24px;
-        height: 24px;
-        left: -40px;
-        top: -5px;
-        background: #c7a17a;
-    }
-    &__text:nth-child(2)::before {
-        @include pseudo();
-        width: 24px;
-        height: 24px;
-        left: -40px;
-        top: -5px;
-        background: #21AF09;
-    }
-    &__text:last-child::before {
-        @include pseudo();
-        width: 24px;
-        height: 24px;
-        left: -40px;
-        top: -5px;
-        background: #FF00FF;
+        &::before {
+            @include pseudo();
+            width: 24px;
+            height: 24px;
+            left: -40px;
+            top: -5px;
+            background: #c7a17a;
+        }
+        &:nth-child(2)::before {
+            background: #21af09;
+        }
+        &:last-child::before {
+            background: #ff00ff;
+        }
     }
 }
