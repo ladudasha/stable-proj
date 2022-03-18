@@ -1,0 +1,39 @@
+.location {
+    // display: none;
+    &__wrap {
+        @include flex(center, center, wrap, column);
+        gap: 16px;
+    }
+    &__button {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #c7a17a;
+        position: relative;
+        &::before {
+            @include pseudo();
+            top: 0;
+            left: -27px;
+            background-image: url(../images/location.svg);
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__input {
+        background: #ffffff;
+        border: 1px solid #e2dfdd;
+        padding: 10px 12px;
+        border-radius: 8px;
+        width: 335px;
+        height: 44px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #a7a7a7;
+    }
+}
+

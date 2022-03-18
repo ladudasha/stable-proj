@@ -15,7 +15,9 @@
         padding-bottom: 16px;
         @include flex (center, center, wrap, column);
         gap: 16px;
-
+    }
+    &__links-block {
+        @include flex (center, center, wrap, row);
     }
     &__link {
         width: 110px;

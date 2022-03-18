@@ -4,7 +4,7 @@
 
 .container {
     max-width: 1216px;
-    min-width: 320px;
+    min-width: 375px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -17,3 +17,4 @@
 @import "./components/sections/delivery";
 @import "./components/order";
 @import "./components/sections/payment";
+@import "./components/sections/location";
