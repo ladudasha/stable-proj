@@ -347,19 +347,23 @@ template {
 
 .delivery {
   padding-top: 20px;
-  padding-bottom: 80px; }
+  padding-bottom: 32px; }
+  @media screen and (min-width: 1216px) {
+    .delivery {
+      padding-top: 120px;
+      padding-bottom: 80px; } }
   .delivery__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 32px; }
+    flex-direction: column; }
   .delivery__title {
     margin-bottom: 16px;
     text-align: center; }
     @media screen and (min-width: 1216px) {
       .delivery__title {
+        margin-bottom: 32px;
         font-family: "NewBaskervilleC";
         font-style: normal;
         font-weight: 400;
@@ -367,43 +371,54 @@ template {
         line-height: 72px;
         text-align: center;
         color: #010103; } }
-  @media screen and (min-width: 1216px) {
-    .delivery__payment {
-      display: none; } }
-  .delivery__payment-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 24px; }
-  .delivery__payment-item {
-    position: relative; }
-    .delivery__payment-item::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background: #c7a17a;
-      border-radius: 50%;
-      top: 5px;
-      left: -20px; }
-  .delivery__payment-btn {
-    width: 335px;
-    height: 48px;
-    padding: 14px 20px;
-    background: #c7a17a;
-    border-radius: 8px;
-    text-align: center;
-    color: #ffffff;
-    display: block;
-    margin: 0 auto; }
-  .delivery__shipping {
+  .delivery__order {
+    margin-bottom: 32px; }
+    @media screen and (min-width: 1216px) {
+      .delivery__order {
+        display: none; } }
+  .delivery__time {
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 16px; }
+    @media screen and (min-width: 1216px) {
+      .delivery__time {
+        margin-bottom: 80px;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 904px;
+        width: 100%; } }
+    .delivery__time-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      position: relative; }
+    .delivery__time-beige {
+      text-align: center;
+      color: #c7a17a;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px; }
+  .delivery__free {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px; }
+    @media screen and (min-width: 1216px) {
+      .delivery__free {
+        flex-direction: row;
+        max-width: 904px;
+        width: 100%;
+        justify-content: space-between; } }
   .delivery__text {
     position: relative; }
     .delivery__text::before {
@@ -420,54 +435,75 @@ template {
     .delivery__text:last-child::before {
       background: #ff00ff; }
 
+.map {
+  position: relative; }
+
 .order {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 16px; }
+  margin-bottom: 32px; }
   @media screen and (min-width: 1216px) {
     .order {
-      flex-direction: row;
-      justify-content: space-around;
-      max-width: 904px;
-      width: 100%; } }
-  .order-block {
+      display: none; } }
+  .order__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px; }
+  .order__item {
     position: relative; }
-  .order-beige {
+    .order__item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #c7a17a;
+      border-radius: 50%;
+      top: 5px;
+      left: -20px; }
+  .order__btn {
+    max-width: 335px;
+    width: 100%;
+    height: 48px;
+    padding: 14px 20px;
+    background: #c7a17a;
+    border-radius: 8px;
     text-align: center;
-    color: #c7a17a;
-    font-family: "Jost";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px; }
+    color: #ffffff;
+    display: block;
+    margin: 0 auto; }
 
 .payment {
+  padding-top: 32px;
   padding-bottom: 32px; }
   .payment__title {
     text-align: center;
     margin-bottom: 16px; }
+  .payment__text {
+    max-width: 335px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 1216px) {
+      .payment__text {
+        max-width: 448px;
+        margin-bottom: 80px; } }
   .payment__img {
     width: 100%;
-    min-width: 335px;
     max-width: 1216px;
     margin: 0 auto; }
   .payment__links-wrap {
-    padding-top: 16px;
-    padding-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 16px; }
+    gap: 16px;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 1216px) {
+      .payment__links-wrap {
+        flex-direction: row;
+        gap: 0;
+        margin-bottom: 80px; } }
   .payment__links-block {
     display: flex;
     justify-content: center;
@@ -516,5 +552,17 @@ template {
     font-size: 16px;
     line-height: 24px;
     color: #a7a7a7; }
+
+.cardMap {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  position: absolute;
+  top: 55px;
+  left: 120px;
+  padding: 32px;
+  width: 384px;
+  height: 440px; }
+  .cardMap-title {
+    margin-bottom: 8px; }
 
 /*# sourceMappingURL=style.min.css.map */

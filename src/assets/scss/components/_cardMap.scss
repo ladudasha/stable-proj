@@ -1,0 +1,13 @@
+.cardMap {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    position: absolute;
+    top: 55px;
+    left: 120px;
+    padding: 32px;
+    width: 384px;
+    height: 440px;
+    &-title {
+        margin-bottom: 8px;
+    }
+}

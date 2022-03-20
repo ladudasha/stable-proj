@@ -1,18 +1,18 @@
 .delivery {
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 32px;
+    @media screen and (min-width: 1216px) {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
     &__wrapper {
         @include flex(center, center, wrap, column);
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-        gap: 32px;
     }
     &__title {
         margin-bottom: 16px;
         text-align: center;
         @media screen and (min-width: 1216px) {
+            margin-bottom: 32px;
             font-family: "NewBaskervilleC";
             font-style: normal;
             font-weight: 400;
@@ -22,43 +22,47 @@
             color: #010103;
         }
     }
-    &__payment {
+    &__order {
+        margin-bottom: 32px;
         @media screen and (min-width: 1216px) {
             display: none;
         }
     }
-    &__payment-list {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        margin-bottom: 24px;
+    &__time {
+        margin-bottom: 32px;
+            @include flex (center, center, wrap, column);
+            gap: 16px;
+            @media screen and (min-width: 1216px) {
+                margin-bottom: 80px;
+                flex-direction: row;
+                justify-content: space-around;
+                max-width: 904px;
+                width: 100%;
+            }
+            &-block {
+                @include flex (center, center, wrap, column);
+                position: relative;
+        
+            }
+            &-beige {
+                text-align: center;
+                color: #c7a17a;
+                font-family: "Jost";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+            }
     }
-    &__payment-item {
-        position: relative;
-        &::before {
-            @include pseudo();
-            width: 8px;
-            height: 8px;
-            background: #c7a17a;
-            border-radius: 50%;
-            top: 5px;
-            left: -20px;
-        }
-    }
-    &__payment-btn {
-        width: 335px;
-        height: 48px;
-        padding: 14px 20px;
-        background: #c7a17a;
-        border-radius: 8px;
-        text-align: center;
-        color: #ffffff;
-        display: block;
-        margin: 0 auto;
-    }
-    &__shipping {
+    &__free {
         @include flex(center, center, wrap, column);
         gap: 16px;
+        @media screen and (min-width: 1216px) {
+            flex-direction: row;
+            max-width: 904px;
+            width: 100%;
+            justify-content: space-between;
+        }
     }
     &__text {
         position: relative;

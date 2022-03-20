@@ -15,17 +15,20 @@
     <section class="delivery">
 
         <div class="container">
+
+            <h2 class="delivery__title title">Доставка и оплата</h2>
             <div class="delivery__wrapper">
-                <h2 class="delivery__title title">Доставка и оплата</h2>
-                <div class="delivery__payment">
-                    <ul class="delivery__payment-list">
-                        <li class="delivery__payment-item">Доставка осуществляется с 11 до 22:00</li>
-                        <li class="delivery__payment-item">Прием предзаказов на сайте — круглосуточно</li>
-                        <li class="delivery__payment-item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00
+                <div class="delivery__order order">
+                    <!-- надо сделать shipping list -->
+                    <ul class="order__list">
+                        <li class="order__item">Доставка осуществляется с 11 до 22:00</li>
+                        <li class="order__item">Прием предзаказов на сайте — круглосуточно</li>
+                        <li class="order__item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00
                         </li>
                     </ul>
-                    <button class="delivery__payment-btn btn">Проверить адрес</button>
+                    <button class="order__btn btn">Проверить адрес</button>
 
+<!-- доставка 2 mobile -->
                     <div class="delivery__location location">
                         <!-- include готовый список -->
                         <div class="location__wrap">
@@ -35,22 +38,22 @@
                     </div>
                 </div>
 
-                <div class="delivery__order order">
-                    <div class="order-block">
-                        <p class="order-beige">400 ₽</p>
+                <div class="delivery__time">
+                    <div class="delivery__time-block">
+                        <p class="delivery__time-beige">400 ₽</p>
                         <p>Минимальный заказ</p>
                     </div>
-                    <div class="order-block">
-                        <p class="order-beige">11—22:00</p>
+                    <div class="delivery__time-block">
+                        <p class="delivery__time-beige">11—22:00</p>
                         <p>Время работы</p>
                     </div>
-                    <div class="order-block">
-                        <p class="order-beige">60 мин</p>
+                    <div class="delivery__time-block">
+                        <p class="delivery__time-beige">60 мин</p>
                         <p>Время доставки</p>
                     </div>
                 </div>
 
-                <div class="delivery__shipping">
+                <div class="delivery__free">
                     <p class="delivery__text">Бесплатная доставка от 400 ₽</p>
                     <p class="delivery__text">Бесплатная доставка от 800 ₽</p>
                     <p class="delivery__text">Бесплатная доставка от 1200 ₽</p>
@@ -68,13 +71,20 @@
                 style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ленина, 82 — Яндекс Карты</a><iframe
                 src="https://yandex.by/map-widget/v1/-/CCUBiQx9kD" width="100%" height="640" frameborder="1"
                 allowfullscreen="true" style="position:relative;"></iframe></div>
+
+<!-- карточка на карте cardMap -->
+                <div class="map__cardMap cardMap">
+                    <h3 class="cardMap-title title">Доставка по Кирову</h3>
+                    <!-- include ORDER -->
+                    <div class="cardMap-pay"></div>
+                </div>
     </section>
 
     <!-- PAYMENT -->
     <section class="payment">
         <div class="container">
             <h3 class="payment__title title">Условия оплаты</h3>
-            <p>Принимаем оплату на сайте с помощью банковских карт или платежных систем
+            <p class="payment__text">Принимаем оплату на сайте с помощью банковских карт или платежных систем
                 Apple Pay и Google Pay, а также наличными
                 и картой при доставке заказа.</p>
             <div class="payment__links-wrap">
