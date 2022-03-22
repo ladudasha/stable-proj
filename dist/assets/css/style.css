@@ -540,6 +540,10 @@ template {
     background: #ff00ff;
 }
 
+.map {
+    position: relative;
+}
+
 .order {
     margin-bottom: 32px;
 }
@@ -659,10 +663,6 @@ template {
     width: 110px;
 }
 
-.location {
-    display: none;
-}
-
 .location__wrap {
     display: -ms-flexbox;
     display: flex;
@@ -675,9 +675,10 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 16px;
+    margin-top: 24px;
 }
 
-.location__button {
+.location__btn {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
@@ -687,7 +688,7 @@ template {
     position: relative;
 }
 
-.location__button::before {
+.location__btn::before {
     content: "";
     display: block;
     position: absolute;
@@ -711,4 +712,19 @@ template {
     font-size: 16px;
     line-height: 24px;
     color: #a7a7a7;
+}
+
+.cardMap {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    position: absolute;
+    top: 55px;
+    left: 120px;
+    padding: 32px;
+    width: 384px;
+    height: 440px;
+}
+
+.cardMap-title {
+    margin-bottom: 8px;
 }

@@ -18,7 +18,9 @@ const del = require('del'); // для удаления файлов и папо�
 const notify = require('gulp-notify'); //предоставляет информацию об ошибке
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
 
-const newer = require("gulp-newer")
+const newer = require("gulp-newer");
+const fileinclude = require("gulp-file-include");
+
 
 
 // Пути 
@@ -76,8 +78,13 @@ function html(cb) {
     return src(path.src.html, { base: srcPath })
         //.pipe() - Это 1 конкретное действие, которое мы хотим совершить над нашими файлами.
         .pipe(plumber())
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+            }))
         .pipe(dest(path.build.html))
         .pipe(browserSync.reload({ stream: true }));
+
 
     cb();
 }

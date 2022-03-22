@@ -19,24 +19,21 @@
             <h2 class="delivery__title title">Доставка и оплата</h2>
             <div class="delivery__wrapper">
                 <div class="delivery__order order">
-                    <!-- надо сделать shipping list -->
-                    <ul class="order__list">
-                        <li class="order__item">Доставка осуществляется с 11 до 22:00</li>
-                        <li class="order__item">Прием предзаказов на сайте — круглосуточно</li>
-                        <li class="order__item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00
-                        </li>
-                    </ul>
+                    @@include({'../src/assets/html/list.html'})
                     <button class="order__btn btn">Проверить адрес</button>
 
-<!-- доставка 2 mobile -->
+                    <!-- доставка 2 mobile -->
                     <div class="delivery__location location">
-                        <!-- include готовый список -->
+                        @@include({'../src/assets/html/list.html'})
                         <div class="location__wrap">
                             <button class="location__btn">Определить местоположение</button>
                             <input class="location__input" type="text" placeholder="Улица и дом">
                         </div>
                     </div>
+
+
                 </div>
+
 
                 <div class="delivery__time">
                     <div class="delivery__time-block">
@@ -72,12 +69,12 @@
                 src="https://yandex.by/map-widget/v1/-/CCUBiQx9kD" width="100%" height="640" frameborder="1"
                 allowfullscreen="true" style="position:relative;"></iframe></div>
 
-<!-- карточка на карте cardMap -->
-                <div class="map__cardMap cardMap">
-                    <h3 class="cardMap-title title">Доставка по Кирову</h3>
-                    <!-- include ORDER -->
-                    <div class="cardMap-pay"></div>
-                </div>
+        <!-- карточка на карте cardMap -->
+        <div class="map__cardMap cardMap">
+            <h3 class="cardMap-title title">Доставка по Кирову</h3>
+            <!-- include ORDER -->
+            <div class="cardMap-pay"></div>
+        </div>
     </section>
 
     <!-- PAYMENT -->

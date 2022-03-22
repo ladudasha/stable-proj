@@ -435,22 +435,14 @@ template {
     .delivery__text:last-child::before {
       background: #ff00ff; }
 
-.map {
-  position: relative; }
-
-.order {
-  margin-bottom: 32px; }
-  @media screen and (min-width: 1216px) {
-    .order {
-      display: none; } }
-  .order__list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 24px; }
-  .order__item {
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px; }
+  .list__item {
     position: relative; }
-    .order__item::before {
+    .list__item::before {
       content: "";
       display: block;
       position: absolute;
@@ -460,6 +452,15 @@ template {
       border-radius: 50%;
       top: 5px;
       left: -20px; }
+
+.map {
+  position: relative; }
+
+.order {
+  margin-bottom: 32px; }
+  @media screen and (min-width: 1216px) {
+    .order {
+      display: none; } }
   .order__btn {
     max-width: 335px;
     width: 100%;
@@ -514,15 +515,17 @@ template {
     width: 110px; }
 
 .location {
-  display: none; }
+  display: none;
+  margin-top: 16px; }
   .location__wrap {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 16px; }
-  .location__button {
+    gap: 16px;
+    margin-top: 24px; }
+  .location__btn {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
@@ -530,7 +533,7 @@ template {
     line-height: 20px;
     color: #c7a17a;
     position: relative; }
-    .location__button::before {
+    .location__btn::before {
       content: "";
       display: block;
       position: absolute;
