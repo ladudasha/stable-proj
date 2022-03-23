@@ -1,4 +1,5 @@
-.cardMap {
+.card {
+    display: none;
     background-color: #FFFFFF;
     border-radius: 16px;
     position: absolute;
@@ -7,7 +8,7 @@
     padding: 32px;
     width: 384px;
     height: 440px;
-    &-title {
-        margin-bottom: 8px;
+    @media screen and (min-width: 1216px) {
+        display: block;
     }
 }

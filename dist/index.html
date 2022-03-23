@@ -19,33 +19,22 @@
             <h2 class="delivery__title title">Доставка и оплата</h2>
             <div class="delivery__wrapper">
                 <div class="delivery__order order">
-                    <ul class="list">
-    <li class="list__item"> TEST Доставка осуществляется с 11 до 22:00</li>
+                    <h3 class="list__title title">Доставка по Кирову</h3>
+<ul class="list__wrap">
+    <li class="list__item">Доставка осуществляется с 11 до 22:00</li>
     <li class="list__item">Прием предзаказов на сайте — круглосуточно</li>
-    <li class="list__item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00 
-    </li>
+    <li class="list__item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00</li>
 </ul>
 
 
-                    <button class="order__btn btn">Проверить адрес</button>
 
-                    <!-- доставка 2 mobile -->
-                    <div class="delivery__location location">
-                        <ul class="list">
-    <li class="list__item"> TEST Доставка осуществляется с 11 до 22:00</li>
-    <li class="list__item">Прием предзаказов на сайте — круглосуточно</li>
-    <li class="list__item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00 
-    </li>
-</ul>
+<button class="order__btn btn">Проверить адрес</button>
+<!-- location -->
+<div class="order__location location location--flex">
+    <button class="location__btn btn">Определить местоположение</button>
+    <input class="location__input input" type="text" placeholder="Улица и дом">
 
-
-                        <div class="location__wrap">
-                            <button class="location__btn">Определить местоположение</button>
-                            <input class="location__input" type="text" placeholder="Улица и дом">
-                        </div>
-                    </div>
-
-
+</div>
                 </div>
 
 
@@ -83,11 +72,35 @@
                 src="https://yandex.by/map-widget/v1/-/CCUBiQx9kD" width="100%" height="640" frameborder="1"
                 allowfullscreen="true" style="position:relative;"></iframe></div>
 
-        <!-- карточка на карте cardMap -->
-        <div class="map__cardMap cardMap">
-            <h3 class="cardMap-title title">Доставка по Кирову</h3>
-            <!-- include ORDER -->
-            <div class="cardMap-pay"></div>
+        <!-- карточка на карте card -->
+        <div class="map__card card">
+            <!-- include list -->
+            <h3 class="list__title title">Доставка по Кирову</h3>
+<ul class="list__wrap">
+    <li class="list__item">Доставка осуществляется с 11 до 22:00</li>
+    <li class="list__item">Прием предзаказов на сайте — круглосуточно</li>
+    <li class="list__item">Прием заказов по телефону 8 (8332) 64-10-86 с 11 до 22:00</li>
+</ul>
+
+
+
+                
+                <!-- button -->
+                <button class="order__btn btn">Проверить адрес</button>
+                <!-- input -->
+                <input class="location__input input" type="text" placeholder="Улица и дом">
+
+            <!-- include list -->
+            <h3 class="list__title title">Способы оплаты</h3>
+<ul class="list__wrap">
+    <li class="list__item">Наличными мобильному официанту</li>
+    <li class="list__item">Картой при получении заказа</li>
+    <li class="list__item">Картой онлайн, Apple Pay и Google Pay</li>
+</ul>
+
+
+ 
+
         </div>
     </section>
 

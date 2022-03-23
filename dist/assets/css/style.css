@@ -540,6 +540,31 @@ template {
     background: #ff00ff;
 }
 
+.list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.list__item {
+    position: relative;
+}
+
+.list__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #c7a17a;
+    border-radius: 50%;
+    top: 5px;
+    left: -20px;
+}
+
 .map {
     position: relative;
 }
@@ -552,31 +577,6 @@ template {
     .order {
         display: none;
     }
-}
-
-.order__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 24px;
-}
-
-.order__item {
-    position: relative;
-}
-
-.order__item::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: #c7a17a;
-    border-radius: 50%;
-    top: 5px;
-    left: -20px;
 }
 
 .order__btn {
@@ -663,7 +663,9 @@ template {
     width: 110px;
 }
 
-.location__wrap {
+.location {
+    display: none;
+    margin-top: 16px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -714,7 +716,8 @@ template {
     color: #a7a7a7;
 }
 
-.cardMap {
+.card {
+    display: none;
     background-color: #FFFFFF;
     border-radius: 16px;
     position: absolute;
@@ -725,6 +728,12 @@ template {
     height: 440px;
 }
 
-.cardMap-title {
+.card-title {
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1216px) {
+    .card {
+        display: block;
+    }
 }

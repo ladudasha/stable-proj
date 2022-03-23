@@ -14,10 +14,10 @@
 
 }
 
-@import "./components/sections/delivery";
+@import "./sections/delivery";
 @import "./block/list";
-@import "./components/sections/map";
-@import "./components/order";
-@import "./components/sections/payment";
-@import "./components/sections/location";
-@import "./components/cardMap";
+@import "./sections/map";
+@import "./block/order";
+@import "./sections/payment";
+@import "./components/location";
+@import "./components/card";

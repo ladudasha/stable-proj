@@ -1,9 +1,13 @@
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 24px;
-
+    &__title {
+        margin-bottom: 8px;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
     &__item {
         position: relative;
         &::before {

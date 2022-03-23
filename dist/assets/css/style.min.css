@@ -435,23 +435,27 @@ template {
     .delivery__text:last-child::before {
       background: #ff00ff; }
 
-.list {
+.list__title {
+  margin-bottom: 8px; }
+
+.list__wrap {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 24px; }
-  .list__item {
-    position: relative; }
-    .list__item::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background: #c7a17a;
-      border-radius: 50%;
-      top: 5px;
-      left: -20px; }
+
+.list__item {
+  position: relative; }
+  .list__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #c7a17a;
+    border-radius: 50%;
+    top: 5px;
+    left: -20px; }
 
 .map {
   position: relative; }
@@ -517,7 +521,7 @@ template {
 .location {
   display: none;
   margin-top: 16px; }
-  .location__wrap {
+  .location--flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,7 +560,8 @@ template {
     line-height: 24px;
     color: #a7a7a7; }
 
-.cardMap {
+.card {
+  display: none;
   background-color: #FFFFFF;
   border-radius: 16px;
   position: absolute;
@@ -565,7 +570,8 @@ template {
   padding: 32px;
   width: 384px;
   height: 440px; }
-  .cardMap-title {
-    margin-bottom: 8px; }
+  @media screen and (min-width: 1216px) {
+    .card {
+      display: block; } }
 
 /*# sourceMappingURL=style.min.css.map */
