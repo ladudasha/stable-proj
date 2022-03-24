@@ -11,4 +11,11 @@
     @media screen and (min-width: 1216px) {
         display: block;
     }
+    &__text-red {
+        color: red;
+
+    }
+    &__text-green {
+        color: green
+    }
 }

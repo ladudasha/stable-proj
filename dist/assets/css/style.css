@@ -540,7 +540,11 @@ template {
     background: #ff00ff;
 }
 
-.list {
+.list__title {
+    margin-bottom: 8px;
+}
+
+.list__wrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -666,6 +670,9 @@ template {
 .location {
     display: none;
     margin-top: 16px;
+}
+
+.location--flex {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -726,10 +733,6 @@ template {
     padding: 32px;
     width: 384px;
     height: 440px;
-}
-
-.card-title {
-    margin-bottom: 8px;
 }
 
 @media screen and (min-width: 1216px) {

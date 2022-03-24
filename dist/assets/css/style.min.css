@@ -573,5 +573,9 @@ template {
   @media screen and (min-width: 1216px) {
     .card {
       display: block; } }
+  .card__text-red {
+    color: red; }
+  .card__text-green {
+    color: green; }
 
 /*# sourceMappingURL=style.min.css.map */
