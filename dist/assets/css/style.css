@@ -740,3 +740,11 @@ template {
         display: block;
     }
 }
+
+.card__text-red {
+    color: red;
+}
+
+.card__text-green {
+    color: green;
+}

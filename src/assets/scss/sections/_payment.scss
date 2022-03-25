@@ -21,21 +21,45 @@
         margin: 0 auto;
     }
     &__links-wrap {
-        @include flex (center, center, wrap, column);
-        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(3, 112px);
+        grid-template-rows: 40px 40px;
+        align-items: center;
+        justify-content: center;
+        row-gap: 16px;
         margin-bottom: 16px;
         @media screen and (min-width: 1216px) {
-            flex-direction: row;
-            gap: 0;
+            grid-template-columns: repeat(6, 112px);
+            grid-template-rows: 40px;
             margin-bottom: 80px;
-
+            row-gap: 0;
         }
     }
-    &__links-block {
-        @include flex (center, center, wrap, row);
-    }
     &__link {
-        width: 110px;
+        justify-self: center;
     }
-    
+    &__icon {
+        width: 57px;
+        height: 24px;
+        @media screen and (min-width: 1216px) {
+            
+        }
+    }
+    // &__links-wrap {
+    //     @include flex (center, center, wrap, column);
+    //     gap: 16px;
+    //     margin-bottom: 16px;
+    //     @media screen and (min-width: 1216px) {
+    //         flex-direction: row;
+    //         gap: 0;
+    //         margin-bottom: 80px;
+
+    //     }
+    // }
+    // &__links-block {
+    //     @include flex (center, center, wrap, row);
+    // }
+    // &__link {
+    //     width: 110px;
+    // }
 }

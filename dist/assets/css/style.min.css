@@ -497,26 +497,24 @@ template {
     max-width: 1216px;
     margin: 0 auto; }
   .payment__links-wrap {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 112px);
+    grid-template-rows: 40px 40px;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 16px;
+    justify-content: center;
+    row-gap: 16px;
     margin-bottom: 16px; }
     @media screen and (min-width: 1216px) {
       .payment__links-wrap {
-        flex-direction: row;
-        gap: 0;
-        margin-bottom: 80px; } }
-  .payment__links-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row; }
+        grid-template-columns: repeat(6, 112px);
+        grid-template-rows: 40px;
+        margin-bottom: 80px;
+        row-gap: 0; } }
   .payment__link {
-    width: 110px; }
+    justify-self: center; }
+  .payment__icon {
+    width: 57px;
+    height: 24px; }
 
 .location {
   display: none;
