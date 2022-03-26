@@ -627,44 +627,38 @@ template {
 }
 
 .payment__links-wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 112px);
+    grid-template-rows: 40px 40px;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 16px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    row-gap: 16px;
     margin-bottom: 16px;
 }
 
 @media screen and (min-width: 1216px) {
     .payment__links-wrap {
-        -ms-flex-direction: row;
-        flex-direction: row;
-        gap: 0;
+        grid-template-columns: repeat(6, 112px);
+        grid-template-rows: 40px;
         margin-bottom: 80px;
+        row-gap: 0;
     }
 }
 
-.payment__links-block {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-direction: row;
-    flex-direction: row;
+.payment__link {
+    justify-self: center;
 }
 
-.payment__link {
-    width: 110px;
+.payment__icon {
+    width: 57px;
+    height: 24px;
+}
+
+.payment #visa {
+    width: 57px;
+    height: 24px;
 }
 
 .location {
