@@ -656,11 +656,6 @@ template {
     height: 24px;
 }
 
-.payment #visa {
-    width: 57px;
-    height: 24px;
-}
-
 .location {
     display: none;
     margin-top: 16px;
